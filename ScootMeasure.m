@@ -27,11 +27,11 @@ if (~isa(sketch, 'uint8'))
     sketch = im2uint8(sketch);
 end
 
-if numel(sketch) == 3
+if length(size(sketch)) == 3
     sketch = rgb2gray(sketch);
 end
 
-if numel(synthesis) == 3
+if length(size(synthesis)) == 3
     synthesis = rgb2gray(synthesis);
 end
 
